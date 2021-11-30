@@ -6,7 +6,13 @@ namespace DemoNamer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string prefix = "FASTCUP";
+            Console.WriteLine("Enter prefix: ");
+            string temp = Console.ReadLine();
+            if (!string.IsNullOrEmpty(temp))
+                prefix = temp;
+            Console.WriteLine(prefix);
+
         }
     }
 }
